@@ -10892,7 +10892,7 @@ selfInfo.prototype.init = function () {
 };
 
 selfInfo.prototype.template = function (options) {
-  var templete = '\n    <div class="info-container">\n      <div class="info-contact">\n        <div class="info-avatar-wrapper">\n          <img src="' + options.avatar + '" alt="avatar" />\n        </div>\n        <div class="info-name-wrapper">\n          <span>' + options.name + '</span>\n        </div>\n        <div class="info-contact-wrapper">\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-email"></span>\n            <a href="emailto:' + options.contact.email + '" class="contact-item-link">' + options.contact.email + '</a>\n          </div>\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-tel"></span>\n            <a href="tel:' + options.contact.phone + '" class="contact-item-link">' + options.contact.phone + '</a>\n          </div>\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-github"></span>\n            <a href="' + options.contact.github + '" class="contact-item-link" target="_blank">' + options.contact.github + '</a>\n          </div>\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-Gitlab"></span>\n            <a href="' + options.contact.gitlab + '" class="contact-item-link" target="_blank">' + options.contact.gitlab + '</a>\n          </div>\n        </div>\n        <div class="qr-wrapper">\n          <img src="images/QR.png" alt="\u4E8C\u7EF4\u7801" class="qr-img" />\n        </div>\n      </div>\n\n      <div class="info-msg">\n        <div class="info-nickname-wrapper">\n          <span class="info-name-firstname">' + options.firstname + '</span>\n          <span class="info-name-lastname">' + options.lastname + '</span>\n        </div>\n        <div class="info-slogan-wrapper">\n          <span class="info-slogan">' + options.slogan + '</span>\n        </div>\n        <div class="info-msg-wrapper">\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u6027\u522B:</span>\n           <span class="msg-item-value">' + options.sex + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5E74\u9F84:</span>\n           <span class="msg-item-value">' + options.age + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5B66\u5386:</span>\n           <span class="msg-item-value">' + options.edu + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5E74\u7EA7:</span>\n           <span class="msg-item-value">' + options.grade + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u6BD5\u4E1A:</span>\n           <span class="msg-item-value">' + options.graduate + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5C31\u8BFB:</span>\n           <span class="msg-item-value">' + options.now + '</span>\n          </div>\n        </div>\n      </div>\n    </div>';
+  var templete = '\n    <div class="info-container">\n      <div class="info-contact">\n        <div class="info-avatar-wrapper">\n          <picture>\n            <source srcset="' + options.avatar_mobile + '" media="(max-width: 768px)"></source>\n            <source srcset="' + options.avatar_pc + '" media="(min-width: 768px)"></source>\n            <img src="" alt="\u5934\u50CF" />\n          </picture>\n        </div>\n        <div class="info-name-wrapper">\n          <span>' + options.name + '</span>\n        </div>\n        <div class="info-contact-wrapper">\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-email"></span>\n            <a href="emailto:' + options.contact.email + '" class="contact-item-link">' + options.contact.email + '</a>\n          </div>\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-tel"></span>\n            <a href="tel:' + options.contact.phone + '" class="contact-item-link">' + options.contact.phone + '</a>\n          </div>\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-github"></span>\n            <a href="' + options.contact.github + '" class="contact-item-link" target="_blank">' + options.contact.github + '</a>\n          </div>\n          <div class="info-contact-item">\n            <span class="icon iconfont icon-Gitlab"></span>\n            <a href="' + options.contact.gitlab + '" class="contact-item-link" target="_blank">' + options.contact.gitlab + '</a>\n          </div>\n        </div>\n        <div class="qr-wrapper">\n          <img src="images/QR.png" alt="\u4E8C\u7EF4\u7801" class="qr-img" />\n        </div>\n      </div>\n\n      <div class="info-msg">\n        <div class="info-nickname-wrapper">\n          <span class="info-name-firstname">' + options.firstname + '</span>\n          <span class="info-name-lastname">' + options.lastname + '</span>\n        </div>\n        <div class="info-slogan-wrapper">\n          <span class="info-slogan">' + options.slogan + '</span>\n        </div>\n        <div class="info-msg-wrapper">\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u6027\u522B:</span>\n           <span class="msg-item-value">' + options.sex + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5E74\u9F84:</span>\n           <span class="msg-item-value">' + options.age + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5B66\u5386:</span>\n           <span class="msg-item-value">' + options.edu + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5E74\u7EA7:</span>\n           <span class="msg-item-value">' + options.grade + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u6BD5\u4E1A:</span>\n           <span class="msg-item-value">' + options.graduate + '</span>\n          </div>\n          <div class="info-msg-item">\n           <span class="msg-item-key">\u5C31\u8BFB:</span>\n           <span class="msg-item-value">' + options.now + '</span>\n          </div>\n        </div>\n      </div>\n    </div>';
 
   this.section.innerHTML = templete;
 };
@@ -11175,7 +11175,8 @@ var config = {
     name: '李骁',
     firstname: 'Li',
     lastname: 'Xiao',
-    avatar: 'images/avatar.jpg',
+    avatar_pc: 'images/avatar_pc.jpg',
+    avatar_mobile: 'images/avatar_mobile.jpg',
     slogan: '念经(coding) 参禅(thinking) 化缘(searching)',
     sex: '男',
     age: 24,
@@ -11191,7 +11192,7 @@ var config = {
     }
   },
   selfIntro: {
-    content: '最早迈入计算机领域是在高中时期，使用编程语言为pascal，参加全国青少年信息学奥林匹克竞赛(noip)获省三等奖，积累了一定数据结构与算法的基础。<br><br>本科为非计算机专业，但凭借着强自学能力和毅力，自学了本科计算机专业的重点课程，并以一个三跨考生的姿态成功考入武汉大学计算机技术专业。<br><br>读研期间接触并深深爱上了前端开发，决心在前端开发领域闯出一片天地。从接触前端到现在有一年时间，熟悉前端开发领域相关技能及知识。平时接触最多的是pc端开发，对移动端开发，微信公众号，微信小程序有一定的了解。自学能力强，能吃苦，有钻研精神，擅长帮助他人，有一定的领导能力，做事能以高标准严格要求自己，喜欢研究新鲜技术及事物。'
+    content: '最早迈入计算机领域是在高中时期，使用编程语言为pascal，参加全国青少年信息学奥林匹克竞赛(noip)获省三等奖，积累了一定数据结构与算法的基础。<br><br>本科为非计算机专业，但凭借着强自学能力和毅力，自学了本科计算机专业的重点课程，并以一个三跨考生的姿态成功考入武汉大学计算机技术专业。<br><br>读研期间接触并深深爱上了前端开发，决心在前端开发领域闯出一片天地。从接触前端到现在有一年时间，熟悉前端开发领域相关技能及知识，(<span style="color: #c00">new!!</span>在前端方面获得的认可有腾讯NEXT前端特训班优秀学员、考有腾讯NEXT学位证书)。平时接触最多的是pc端开发，对移动端开发，微信公众号，微信小程序有一定的了解。自学能力强，能吃苦，有钻研精神，擅长帮助他人，有一定的领导能力，做事能以高标准严格要求自己，喜欢研究新鲜技术及事物。'
   },
   selfExp: {
     content: [{
@@ -11259,7 +11260,7 @@ var config = {
     }, {
       projectName: '口袋豆瓣PWA',
       projectIntro: '基于react的豆瓣应用，经历过两次比较大的升级。第一次是在老师的指导下，将组件划分为了展示组件与容器组件，使得组件更易被复用、维护，逻辑更清晰，同时使用了redux与react-router使得组件的状态更易被管理，使用了css预编译sass使得css具备了组件化的特点，且css开发效率更高。第二次升级是因为对近年来前端的热点之一pwa应用产生了浓厚兴趣，所以自学了pwa应用的一些相关知识从而对该应用进行了pwa升级，具备了离线，通知，可添加app图标至桌面的特点。',
-      projectSkillStack: '组件化 react redux react-router scss webpack es6 jsonp PWA(service worker, web notification, manifest.json)',
+      projectSkillStack: '组件化 react redux react-router scss webpack es6 跨域(jsonp) PWA(service worker, web notification, manifest.json)',
       projectCodeLink: 'https://github.com/lixiaotiancai/doubanPocketPWA',
       projectOnline: 'https://lixiaotiancai.github.io/doubanPocket/#/'
     }, {
@@ -11279,8 +11280,8 @@ var config = {
   selfProject: {
     content: [{
       projectName: '我的个人网站',
-      projectIntro: '自己独立搭建的个人网站，网站目前还在建设中。服务器采用的阿里云ECS，操作系统为linux，后台采用koa搭建，前端使用的为ES5原生js，采用flex布局，前后端使用ajax进行交互，尚未使用数据库，数据由mock data模拟提供。',
-      projectSkillStack: '服务器搭建 linux koa ajax 组件 缓存策略 前端性能优化 整站设计',
+      projectIntro: '自己独立搭建的个人网站，网站目前还在建设中。服务器采用的阿里云ECS，操作系统为linux，后台采用koa搭建，前端使用的为ES5原生js，采用flex布局，前后端使用ajax进行交互，尚未使用数据库，数据由mock data模拟提供。(<span style="color: #c00">new!</span>博客后台管理系统已搭建完成!网站博客数据全部由模拟数据转换为数据库数据！)',
+      projectSkillStack: '服务器搭建 linux koa ajax 组件 接口设计 缓存策略 前端性能优化 整站设计 mongodb',
       projectCodeLink: 'https://github.com/lixiaotiancai/my-website',
       projectOnline: 'http://39.108.226.142'
     }, {
@@ -11301,6 +11302,12 @@ var config = {
       projectSkillStack: 'es6 webpack 响应式 flex布局 sass 组件化 原型',
       projectCodeLink: 'https://github.com/lixiaotiancai/resume-template',
       projectOnline: 'http://39.108.226.142/about'
+    }, {
+      projectName: '网站博客管理后台',
+      projectIntro: '现在网站的博客数据全部基于数据库查询，可以通过管理后台在线对网站的博客进行增、删、查、改。',
+      projectSkillStack: 'mongodb cookie flex布局 koa 接口设计 组件 ajax',
+      projectCodeLink: 'https://github.com/lixiaotiancai/my-website',
+      projectOnline: 'http://39.108.226.142/management'
     }]
   }
 };
